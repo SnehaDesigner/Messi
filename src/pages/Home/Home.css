@@ -1,0 +1,140 @@
+section {
+    padding: 60px;
+    color: #fff;
+}
+
+.bannerImage {
+    background-image: url('../../assets/banner.png');
+    height: 650px;
+    position: relative;
+    width: 100%;
+}
+
+.bannerImage::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #595959, #000000);
+    opacity: .7;
+}
+
+.bannerContent h4,
+.bannerContent h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.bannerContent h1 {
+    font-size: 70px;
+}
+
+.bannerContent {
+    position: absolute;
+    right: 8%;
+    top: 24%;
+    max-width: 500px;
+    z-index: 1;
+    width: 100%;
+}
+
+.bannerContent p {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.homeButton {
+    background-color: #5d7290;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #fff;
+}
+.sectionThree .sectionHead
+{
+    color: #000;
+}
+.sectionTwo,
+.sectionFour {
+    background-color: #274156;
+}
+
+.sectionHead {
+    font-weight: 700;
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+
+.newArrival {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    margin: 50px 0px 0px;
+}
+
+.arrival img {
+    max-width: 600px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.arrival h3 {
+    margin: 30px 0px 15px;
+}
+
+.thirdSec {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.thirdSec .card {
+    border: none;
+}
+
+.thirdSec .card .card-title {
+    font-size: 24px;
+}
+
+.thirdSec .card .card-text {
+    font-size: 20px;
+    color: #939393;
+}
+
+.thirdSec .card img {
+    max-width: 430px;
+    height: 430px;
+    object-fit: cover;
+}
+
+.testImage {
+    background-image: url('../../assets/testimonial.png');
+    height: 400px;
+    max-width: 400px;
+    background-size: contain;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 100px;
+    align-items: center;
+}
+
+.testContent p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.testContent h4 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+}
