@@ -1,0 +1,20 @@
+.price_slider_wrapper .price_slider {
+    border-radius: 1em;
+    background-color: #0063d1;
+    border: 0;
+    height: 2px;
+    position: relative;
+    text-align: left;
+    margin: 1em 0.5em;
+}
+
+.price_label .from,
+.price_label .to {
+    color: #0063d1;
+    font-size: 16px;
+}
+
+.price_label {
+    font-size: 18px;
+    font-weight: 500;
+}

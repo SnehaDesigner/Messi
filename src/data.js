@@ -7,7 +7,7 @@ export const AVAILABLE_PRODUCTS = [
   {
     id: "p1",
     title: "First Shoe",
-    amount: "$110.00",
+    price: "110.00",
     image: {
       src: orangeShoe,
       alt: "Orange Shoe",
@@ -16,7 +16,7 @@ export const AVAILABLE_PRODUCTS = [
   {
     id: "p2",
     title: "Second Shoe",
-    amount: "$240.00",
+    price: "240.00",
     image: {
       src: purpleShoe,
       alt: "Purple Shoe",
@@ -25,7 +25,7 @@ export const AVAILABLE_PRODUCTS = [
   {
     id: "p3",
     title: "Third Shoe",
-    amount: "$1700.00",
+    price: "1700.00",
     image: {
       src: greenShoe,
       alt: "Green Shoe",
@@ -34,7 +34,7 @@ export const AVAILABLE_PRODUCTS = [
   {
     id: "p4",
     title: "Fourth Shoe",
-    amount: "$900.00",
+    price: "900.00",
     image: {
       src: lightGreenShoe,
       alt: "Light Green Shoe",

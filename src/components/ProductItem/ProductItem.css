@@ -13,11 +13,12 @@
     position: relative;
     z-index: 1;
 }
-.product-wrapper img
-{
+
+.product-wrapper img {
     max-width: 260px;
     width: 100%;
 }
+
 .product-title {
     margin-bottom: 5px;
     display: block;
@@ -31,8 +32,8 @@
 .amount {
     color: #5d7290;
 }
-.favourite
-{
+
+.favourite {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -40,9 +41,10 @@
     border: 1px solid #efefef;
     padding: 7px;
     height: 40px;
+    width: fit-content;
 }
-.favourite svg
-{
+
+.favourite svg {
     fill: red;
     font-size: 26px;
 }

@@ -47,20 +47,14 @@ section {
     font-size: 20px;
 }
 
-.homeButton {
-    background-color: #5d7290;
-    border: none;
-    padding: 10px 60px;
-    border-radius: 5px;
-    font-size: 18px;
+button.homeButton {
     margin-top: 15px;
-    font-weight: 600;
-    color: #fff;
 }
-.sectionThree .sectionHead
-{
+
+.sectionThree .sectionHead {
     color: #000;
 }
+
 .sectionTwo,
 .sectionFour {
     background-color: #274156;

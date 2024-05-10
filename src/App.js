@@ -4,6 +4,8 @@ import Home from "./pages/Home/Home";
 import RootLayout from "./pages/RootLayout";
 import Products from "./pages/Products/Products";
 import Favourites from "./pages/Favourites/Favourites";
+import Login, { action as loginAction } from "./pages/Login/Login";
+import Register, { action as regAction } from "./pages/Register/Register";
 
 function App() {
   const router = createBrowserRouter([
@@ -11,9 +13,11 @@ function App() {
       path: "/",
       element: <RootLayout />,
       children: [
-        { path: "/", element: <Home /> },
+        { index: true, element: <Home /> },
         { path: "/products", element: <Products /> },
-        { path: "/favourites", element: <Favourites /> },
+        { path: "/favorites", element: <Favourites /> },
+        { path: "/login", element: <Login />, action: loginAction },
+        { path: "/register", element: <Register />, action: regAction },
       ],
     },
   ]);

@@ -1,0 +1,23 @@
+.registerForm {
+    max-width: 900px !important;
+}
+
+.registerBtn {
+    max-width: 300px;
+}
+
+.registerForm .new p {
+    margin-bottom: 0px;
+}
+
+.selectUser .MuiFormControl-root,
+.selectUser .MuiRadioGroup-root {
+    flex-direction: row;
+}
+.selectUser .MuiFormLabel-root
+{
+    margin-right: 30px;
+}
+.registerForm .MuiFormControl-root .MuiFormGroup-root .MuiRadio-root {
+    padding: 0px 9px;
+}

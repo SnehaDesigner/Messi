@@ -4,13 +4,13 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import FavContext from "../../store/FavContext";
 
-const ProductItem = ({ image, title, amount, prodId }) => {
+const ProductItem = ({ image, title, price, prodId }) => {
   const FavCtx = useContext(FavContext);
   const [isFavorite, setIsFavorite] = useState(false);
   function handleFavourite() {
     setIsFavorite(!isFavorite);
     if (!isFavorite) {
-      FavCtx.addFavItem({ id: prodId, image, title, amount });
+      FavCtx.addFavItem({ id: prodId, image, title, price });
     }
   }
   return (
@@ -24,7 +24,7 @@ const ProductItem = ({ image, title, amount, prodId }) => {
           <div className="product-content">
             <h4 className="product-title">{title}</h4>
             <span className="price">
-              <span className="amount">{amount}</span>
+              <span className="price">${price}</span>
             </span>
           </div>
         </div>

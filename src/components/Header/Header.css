@@ -23,6 +23,15 @@ header {
     width: 80px;
 }
 
+button.login {
+    padding: 10px 30px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbarList li .login a {
+    color: #fff;
+}
 .navbarList li {
     text-transform: uppercase;
     padding: 8px 20px;
@@ -45,8 +54,8 @@ header {
     color: #5c5c5c;
     position: relative;
 }
-.favCount
-{
+
+.favCount {
     border-radius: 50px;
     background-color: #5d7290;
     color: #fff;

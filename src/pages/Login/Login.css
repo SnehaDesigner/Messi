@@ -1,0 +1,43 @@
+.loginForm {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 5px;
+    padding: 40px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16)
+}
+
+.welcome {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.new {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.new p {
+    white-space: nowrap;
+}
+
+.new .acc {
+    margin-left: 0.5rem;
+}
+
+.new .acc a {
+    color: #0485cd;
+    text-decoration: none;
+}
+
+.loginBtn {
+    margin: 15px auto 0px;
+}
+
+.loginActBox svg {
+    fill: #c9c9c9;
+}
+
+.loginActBox a {
+    text-decoration: none;
+}

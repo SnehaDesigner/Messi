@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import leftTwo from "../../assets/leftTwo.jpg";
 import rightTwo from "../../assets/rightTwo.png";
@@ -8,11 +8,19 @@ import threeThree from "../../assets/threeThree.png";
 import fourThree from "../../assets/fourThree.jpg";
 import fiveThree from "../../assets/fiveThree.png";
 import sixThree from "../../assets/sixThree.jpg";
+import Button from "../../components/Button/Button";
 
 const Home = () => {
+  const [state, setState] = useState(0);
+  function clickMe() {
+    setState(state + 1);
+    console.log(state);
+  }
   return (
     <>
       <section className="bannerImage">
+        <button onClick={clickMe}>Clicl</button>
+        <p>{state}</p>
         <div className="bannerContent container">
           <div>
             <h4>Our Exclusive</h4>
@@ -21,7 +29,7 @@ const Home = () => {
               We have all your auto parts needs! Are you looking for the best
               performance car parts and car accessories
             </p>
-            <button className="homeButton">Shop</button>
+            <Button className="homeButton">Shop</Button>
           </div>
         </div>
       </section>
