@@ -13,7 +13,7 @@ import Button from "../../components/Button/Button";
 // } from "@mui/material";
 
 const Register = () => {
-  const data = useActionData();
+  // const data = useActionData();
   // const [userType, setUserType] = useState("Buyer");
   const userForm = [
     {
@@ -96,14 +96,14 @@ const Register = () => {
     <>
       <Form className="registerForm loginForm" method="post">
         <h1 className="text-left mb-4 welcome">Register</h1>
-        {data && data.errors && (
+        {/* {data && data.errors && (
           <ul>
             {Object.values(data.errors).map((err) => (
               <li key={err}>{err}</li>
             ))}
           </ul>
         )}
-        {data && data.message && <p>{data.message}</p>}
+        {data && data.message && <p>{data.message}</p>} */}
         {/* <div className="selectUser">
           <FormControl>
             <FormLabel id="demo-radio-buttons-group-label">I am a</FormLabel>
@@ -155,37 +155,32 @@ const Register = () => {
 
 export default Register;
 
-export async function action({ request }) {
-  const formData = await request.formData();
-  const regData = {
-    user: {
-      first_name: formData.get("first_name"),
-      last_name: formData.get("last_name"),
-      email: formData.get("email"),
-      password: formData.get("password"),
-      phone_number: formData.get("phone_number"),
-      // streetAddress: formData.get("street_Address"),
-      // country: formData.get("country"),
-      // state: formData.get("state"),
-      // city: formData.get("city"),
-      // postalCode: formData.get("postal_code"),
-    },
-  };
-  const response = await fetch(
-    "https://2739-103-81-237-73.ngrok-free.app/signup",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(regData),
-    }
-  );
-  if (!response.ok) {
-    throw json({ message: "User Not Valid" });
-  }
-  debugger;
-  const token = await response.headers.get("Authorization");
-  localStorage.setItem("regToken", token);
-  return redirect("/");
-}
+// export async function action({ request }) {
+//   const formData = await request.formData();
+//   const regData = {
+//     user: {
+//       first_name: formData.get("first_name"),
+//       last_name: formData.get("last_name"),
+//       email: formData.get("email"),
+//       password: formData.get("password"),
+//       phone_number: formData.get("phone_number"),
+//     },
+//   };
+//   const response = await fetch(
+//     "https://2739-103-81-237-73.ngrok-free.app/signup",
+//     {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(regData),
+//     }
+//   );
+//   if (!response.ok) {
+//     throw json({ message: "User Not Valid" });
+//   }
+//   debugger;
+//   const token = await response.headers.get("Authorization");
+//   localStorage.setItem("regToken", token);
+//   return redirect("/");
+// }

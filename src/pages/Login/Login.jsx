@@ -5,7 +5,7 @@ import {
   Link,
   json,
   redirect,
-  useActionData,
+  // useActionData,
   useNavigation,
 } from "react-router-dom";
 import Button from "../../components/Button/Button";
@@ -14,21 +14,21 @@ import { Checkbox, FormControlLabel, FormGroup } from "@mui/material";
 // import { serverLink } from "../../Server/Link";
 
 const Login = () => {
-  const data = useActionData();
+  // const data = useActionData();
   const navigation = useNavigation();
   const isSubmitting = navigation.state === "submitting";
   return (
     <>
       <Form method="post" className="loginForm">
         <h1 className="text-left mb-2 welcome">Welcome back</h1>
-        {data && data.errors && (
+        {/* {data && data.errors && (
           <ul>
             {Object.values(data.errors).map((err) => (
               <li key={err}>{err}</li>
             ))}
           </ul>
         )}
-        {data && data.message && <p>{data.message}</p>}
+        {data && data.message && <p>{data.message}</p>} */}
         <div className="d-flex align-items-center mb-2 new">
           <p>New to Messi?</p>
           <p className="acc">
@@ -58,34 +58,29 @@ const Login = () => {
 };
 
 export default Login;
-export async function action({ request }) {
-  const data = await request.formData();
-  const loginData = {
-    user: {
-      email: data.get("email"),
-      password: data.get("password"),
-    },
-  };
-  const response = await fetch(
-    "https://2739-103-81-237-73.ngrok-free.app/login",
-    {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(loginData),
-    }
-  );
-  // if (response.status === 200) {
-  //   return response;
-  // }
-  if (!response.ok) {
-    throw json({ message: "User Not Valid" });
-  }
-  debugger;
-  // const resData = await response.json();
-
-  const token = await response.headers.get("Authorization");
-  localStorage.setItem("token", token);
-  return redirect("/");
-}
+// export async function action({ request }) {
+//   const data = await request.formData();
+//   const loginData = {
+//     user: {
+//       email: data.get("email"),
+//       password: data.get("password"),
+//     },
+//   };
+//   const response = await fetch(
+//     "https://2739-103-81-237-73.ngrok-free.app/login",
+//     {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//       body: JSON.stringify(loginData),
+//     }
+//   );
+//   if (!response.ok) {
+//     throw json({ message: "User Not Valid" });
+//   }
+//   debugger;
+//   const token = await response.headers.get("Authorization");
+//   localStorage.setItem("token", token);
+//   return redirect("/");
+// }
