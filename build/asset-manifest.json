@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.5160bd5d.css",
-    "main.js": "/static/js/main.63cc8937.js",
-    "static/js/453.5c7bb13b.chunk.js": "/static/js/453.5c7bb13b.chunk.js",
-    "static/media/rightTwo.png": "/static/media/rightTwo.807040efe1b1e2d95596.png",
-    "static/media/threeThree.png": "/static/media/threeThree.de17d22486381e2e4fc2.png",
-    "static/media/banner.png": "/static/media/banner.1806172c8c9d8ab84bda.png",
-    "static/media/oneThree.jpg": "/static/media/oneThree.6192474d0a613159bca5.jpg",
-    "static/media/fiveThree.png": "/static/media/fiveThree.3badedcd332143f91b3c.png",
-    "static/media/testimonial.png": "/static/media/testimonial.64f360a6672fdb78570b.png",
-    "static/media/leftTwo.jpg": "/static/media/leftTwo.7df0d6657e16d184f8e1.jpg",
-    "static/media/fourThree.jpg": "/static/media/fourThree.3c69aee3ffb4e063a242.jpg",
-    "static/media/sixThree.jpg": "/static/media/sixThree.dcc4f85f855042018547.jpg",
-    "static/media/twoThree.jpg": "/static/media/twoThree.56b618d07eb94c900bb0.jpg",
-    "index.html": "/index.html",
-    "main.5160bd5d.css.map": "/static/css/main.5160bd5d.css.map",
-    "main.63cc8937.js.map": "/static/js/main.63cc8937.js.map",
-    "453.5c7bb13b.chunk.js.map": "/static/js/453.5c7bb13b.chunk.js.map"
+    "main.css": "https://www.messi.webomtech.com/static/css/main.9d0eff29.css",
+    "main.js": "https://www.messi.webomtech.com/static/js/main.1b773353.js",
+    "static/js/453.5c7bb13b.chunk.js": "https://www.messi.webomtech.com/static/js/453.5c7bb13b.chunk.js",
+    "static/media/rightTwo.png": "https://www.messi.webomtech.com/static/media/rightTwo.807040efe1b1e2d95596.png",
+    "static/media/threeThree.png": "https://www.messi.webomtech.com/static/media/threeThree.de17d22486381e2e4fc2.png",
+    "static/media/banner.png": "https://www.messi.webomtech.com/static/media/banner.1806172c8c9d8ab84bda.png",
+    "static/media/oneThree.jpg": "https://www.messi.webomtech.com/static/media/oneThree.6192474d0a613159bca5.jpg",
+    "static/media/fiveThree.png": "https://www.messi.webomtech.com/static/media/fiveThree.3badedcd332143f91b3c.png",
+    "static/media/testimonial.png": "https://www.messi.webomtech.com/static/media/testimonial.64f360a6672fdb78570b.png",
+    "static/media/leftTwo.jpg": "https://www.messi.webomtech.com/static/media/leftTwo.7df0d6657e16d184f8e1.jpg",
+    "static/media/fourThree.jpg": "https://www.messi.webomtech.com/static/media/fourThree.3c69aee3ffb4e063a242.jpg",
+    "static/media/sixThree.jpg": "https://www.messi.webomtech.com/static/media/sixThree.dcc4f85f855042018547.jpg",
+    "static/media/twoThree.jpg": "https://www.messi.webomtech.com/static/media/twoThree.56b618d07eb94c900bb0.jpg",
+    "index.html": "https://www.messi.webomtech.com/index.html",
+    "main.9d0eff29.css.map": "https://www.messi.webomtech.com/static/css/main.9d0eff29.css.map",
+    "main.1b773353.js.map": "https://www.messi.webomtech.com/static/js/main.1b773353.js.map",
+    "453.5c7bb13b.chunk.js.map": "https://www.messi.webomtech.com/static/js/453.5c7bb13b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5160bd5d.css",
-    "static/js/main.63cc8937.js"
+    "static/css/main.9d0eff29.css",
+    "static/js/main.1b773353.js"
   ]
 }
