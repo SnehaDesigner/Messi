@@ -6,6 +6,7 @@ import Products from "./pages/Products/Products";
 import Favourites from "./pages/Favourites/Favourites";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import PostProduct from "./pages/PostProduct/PostProduct";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,6 +16,7 @@ function App() {
       children: [
         { index: true, element: <Home /> },
         { path: "/products", element: <Products /> },
+        { path: "/post-a-product", element: <PostProduct /> },
         { path: "/favorites", element: <Favourites /> },
         { path: "/login", element: <Login /> },
         { path: "/register", element: <Register /> },

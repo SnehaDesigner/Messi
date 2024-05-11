@@ -1,0 +1,96 @@
+.postProductForm {
+    max-width: 900px !important;
+}
+
+.selectProduct .MuiFormControl-root,
+.selectProduct .MuiRadioGroup-root {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center
+}
+
+.selectProduct .MuiFormLabel-root {
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.selectProduct span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.postProductBtn {
+    max-width: 150px;
+}
+
+.upload-file-wrapper {
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    background: #fbfbfb;
+    border: 2px dashed #c9c5d7;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.upload-file-wrapper input[type=file] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.upload-file-wrapper>div {
+    width: 100%;
+}
+
+.productPostThumbnails .pp-edit {
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    display: block;
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    background: #fa6055;
+    border: none;
+    right: 0px;
+    top: -7px;
+    bottom: auto;
+    font-size: 15px;
+    z-index: 10;
+}
+
+.productPostThumbnails {
+    margin-top: 10px;
+    position: relative;
+}
+
+.productPostThumbnails img {
+    width: 100%;
+}
+
+.pp-edit svg {
+    width: 20px;
+    height: 20px;
+}
+
+.ul-img-head {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #737373;
+    margin: 10px 0 0;
+}

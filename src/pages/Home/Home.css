@@ -50,7 +50,10 @@ section {
 button.homeButton {
     margin-top: 15px;
 }
-
+.arrival img:hover
+{
+    transform: scale(1.1);
+}
 .sectionThree .sectionHead {
     color: #000;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Home.css";
 import leftTwo from "../../assets/leftTwo.jpg";
 import rightTwo from "../../assets/rightTwo.png";
@@ -11,16 +11,9 @@ import sixThree from "../../assets/sixThree.jpg";
 import Button from "../../components/Button/Button";
 
 const Home = () => {
-  const [state, setState] = useState(0);
-  function clickMe() {
-    setState(state + 1);
-    console.log(state);
-  }
   return (
     <>
       <section className="bannerImage">
-        <button onClick={clickMe}>Clicl</button>
-        <p>{state}</p>
         <div className="bannerContent container">
           <div>
             <h4>Our Exclusive</h4>

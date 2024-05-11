@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Register.css";
 import Input from "../../components/Input/Input";
 import { Form, Link, json, redirect, useActionData } from "react-router-dom";
 import Button from "../../components/Button/Button";
 // import { serverLink } from "../../Server/Link";
-// import {
-//   FormControl,
-//   FormControlLabel,
-//   FormLabel,
-//   Radio,
-//   RadioGroup,
-// } from "@mui/material";
+import {
+  FormControl,
+  FormControlLabel,
+  FormLabel,
+  Radio,
+  RadioGroup,
+} from "@mui/material";
 
 const Register = () => {
-  // const data = useActionData();
-  // const [userType, setUserType] = useState("Buyer");
+  const data = useActionData();
+  const [userType, setUserType] = useState("Buyer");
   const userForm = [
     {
       id: "first_name",
@@ -70,41 +70,41 @@ const Register = () => {
       label: "Postal Code",
     },
   ];
-  // if (userType === "Seller") {
-  //   userForm.push(
-  //     {
-  //       id: "company_name",
-  //       name: "company_name",
-  //       label: "Company Name",
-  //     },
-  //     {
-  //       id: "brands_name",
-  //       name: "brands_name",
-  //       label: "Brands Name",
-  //     },
-  //     {
-  //       id: "product_category",
-  //       name: "product_category",
-  //       label: "Product Category",
-  //     }
-  //   );
-  // }
-  // function handleUserTypeChange(event) {
-  //   setUserType(event.target.value);
-  // }
+  if (userType === "Seller") {
+    userForm.push(
+      {
+        id: "company_name",
+        name: "company_name",
+        label: "Company Name",
+      },
+      {
+        id: "brands_name",
+        name: "brands_name",
+        label: "Brands Name",
+      },
+      {
+        id: "product_category",
+        name: "product_category",
+        label: "Product Category",
+      }
+    );
+  }
+  function handleUserTypeChange(event) {
+    setUserType(event.target.value);
+  }
   return (
     <>
       <Form className="registerForm loginForm" method="post">
         <h1 className="text-left mb-4 welcome">Register</h1>
-        {/* {data && data.errors && (
+        {data && data.errors && (
           <ul>
             {Object.values(data.errors).map((err) => (
               <li key={err}>{err}</li>
             ))}
           </ul>
         )}
-        {data && data.message && <p>{data.message}</p>} */}
-        {/* <div className="selectUser">
+        {data && data.message && <p>{data.message}</p>}
+        <div className="selectUser">
           <FormControl>
             <FormLabel id="demo-radio-buttons-group-label">I am a</FormLabel>
             <RadioGroup
@@ -125,7 +125,7 @@ const Register = () => {
               />
             </RadioGroup>
           </FormControl>
-        </div> */}
+        </div>
         <div className="row mt-4">
           {userForm.map((buyer) => (
             <div className="col-12 col-md-6" key={buyer.id}>
@@ -155,32 +155,32 @@ const Register = () => {
 
 export default Register;
 
-// export async function action({ request }) {
-//   const formData = await request.formData();
-//   const regData = {
-//     user: {
-//       first_name: formData.get("first_name"),
-//       last_name: formData.get("last_name"),
-//       email: formData.get("email"),
-//       password: formData.get("password"),
-//       phone_number: formData.get("phone_number"),
-//     },
-//   };
-//   const response = await fetch(
-//     "https://2739-103-81-237-73.ngrok-free.app/signup",
-//     {
-//       method: "POST",
-//       headers: {
-//         "Content-Type": "application/json",
-//       },
-//       body: JSON.stringify(regData),
-//     }
-//   );
-//   if (!response.ok) {
-//     throw json({ message: "User Not Valid" });
-//   }
-//   debugger;
-//   const token = await response.headers.get("Authorization");
-//   localStorage.setItem("regToken", token);
-//   return redirect("/");
-// }
+export async function action({ request }) {
+  const formData = await request.formData();
+  const regData = {
+    user: {
+      first_name: formData.get("first_name"),
+      last_name: formData.get("last_name"),
+      email: formData.get("email"),
+      password: formData.get("password"),
+      phone_number: formData.get("phone_number"),
+    },
+  };
+  const response = await fetch(
+    "https://2739-103-81-237-73.ngrok-free.app/signup",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(regData),
+    }
+  );
+  if (!response.ok) {
+    throw json({ message: "User Not Valid" });
+  }
+  debugger;
+  const token = await response.headers.get("Authorization");
+  localStorage.setItem("regToken", token);
+  return redirect("/");
+}

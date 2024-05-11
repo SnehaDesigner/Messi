@@ -12,9 +12,7 @@ const Header = () => {
   const favCtx = useContext(FavContext);
   const authCtx = useContext(AuthContext);
   const favCount = favCtx.favItems.length;
-  const isAuthenticated = authCtx.isLogin;
-  console.log(isAuthenticated);
-  console.log(favCount);
+  const isAuthenticated = authCtx.isAuthenticated;
   return (
     <header>
       <nav className="container">
@@ -70,7 +68,7 @@ const Header = () => {
               ) : (
                 <ListItem>
                   <button className="login">
-                    <Link to="/login">Login</Link> /{" "}
+                    <Link to="/login">Login</Link> /
                     <Link to="/register">Register</Link>
                   </button>
                 </ListItem>
